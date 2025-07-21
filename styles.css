@@ -1,0 +1,185 @@
+body{
+  font-family:'Outfit',sans-serif;
+  background-color:  hsl(30, 54%, 90%);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2{
+  font-family: 'Young Serif',sans-serif;
+}
+
+.recipe-container{
+  max-width: 700px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2rem auto;
+  border-radius: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding:30px;
+}
+
+.image-container{  
+  border-radius: 1rem;  
+}
+
+.omelette-image{
+  width: 100%;
+  border-radius: 10px;
+}
+
+p,
+h1,
+h2
+{
+  margin:0;
+  padding: 0;
+}
+
+.title{
+  text-align: left;
+  font-weight: 600;
+  font-size: 24px; 
+  color: hsl(24, 5%, 18%);
+  line-height: 1.5;
+  border: none;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.content
+{ 
+  color:hsl(30, 10%, 34%) ;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-right: 40px;
+}
+
+.preparation-container
+{  
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 1rem;
+  width: 100%; 
+  margin-bottom: 25px;
+}
+
+.preparation-title{
+  color: hsl(332, 51%, 32%) ;
+  font-size: 16px;
+  font-weight: bold; 
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.preparation-list{
+  font-size: 14px;
+  line-height: 1.5;
+  color: hsl(30, 10%, 34%);
+}
+
+.preparation-list::marker{
+  color:hsl(332, 51%, 32%);
+}
+
+.preparation-order{
+  padding-left: 20px;
+}
+
+.ingredients-container ul,
+.instructions-container ol{ 
+  padding-left: 20px;
+}
+
+.ingredients-title,
+.instructions-title,
+.nutrition-title{
+  color: hsl(14, 45%, 36%);
+  font-size: 20px; 
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.ingredients-list{
+  list-style: square;
+}
+
+.ingredients-list,
+.instructions-list
+{
+  font-size: 16px;
+  line-height: 1.5;  
+  color:  hsl(30, 10%, 34%);
+  margin-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 50px;
+}
+
+.ingredients-list::marker,
+.instructions-list::marker{
+   color:hsl(14, 45%, 36%);
+}
+
+ol > .instructions-list::marker {
+  font-weight: bold;
+}
+
+
+hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition-description{
+  font-size: 16px;
+  line-height: 1.5;  
+  color:  hsl(30, 10%, 34%);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.nutrition-name{
+  font-size: 16px;
+  line-height: 1.5;  
+  color:  hsl(30, 10%, 34%);
+  padding-right: 200px;
+  padding-left: 25px;
+}
+
+.nutrition-value{
+  font-size: 16px;
+  line-height: 1.5;  
+  font-weight: 600;
+  color:   hsl(14, 45%, 36%);
+}
+
+tr td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 12px 0;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+@media(min-width:768px){
+  body{
+    max-height: 100vh;
+  }
+}
+
+@media(min-width:767px){
+  body{
+    max-height: 100dvh;
+  }
+}
