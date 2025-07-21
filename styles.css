@@ -172,14 +172,112 @@ tr:last-child td {
   border-bottom: none;
 }
 
-@media(min-width:768px){
-  body{
-    max-height: 100vh;
+@media (max-width: 768px) {
+  .recipe-container {
+    margin: 1rem;
+    padding: 20px;
+    border-radius: 1.5rem;
+    max-width: none;
+  }
+  
+  .title {
+    font-size: 22px;
+  }
+  
+  .content {
+    padding-right: 20px;
+  }
+  
+  .ingredients-list,
+  .instructions-list {
+    padding-right: 20px;
+  }
+  
+  .nutrition-name {
+    padding-right: 100px;
   }
 }
 
-@media(min-width:767px){
-  body{
-    max-height: 100dvh;
+
+@media (max-width: 480px) {
+  body {
+    padding: 0;
+  }
+  
+  .recipe-container {
+    margin: 0.5rem;
+    padding: 15px;
+    border-radius: 1rem;
+  }
+  
+  .title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .content {
+    font-size: 14px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .preparation-container {
+    margin-bottom: 20px;
+  }
+  
+  .preparation-title {
+    font-size: 14px;
+  }
+  
+  .preparation-list {
+    font-size: 13px;
+  }
+  
+  .ingredients-title,
+  .instructions-title,
+  .nutrition-title {
+    font-size: 18px;
+  }
+  
+  .ingredients-list,
+  .instructions-list {
+    font-size: 14px;
+    padding-right: 10px;
+    padding-left: 5px;
+  }
+  
+  .nutrition-name {
+    padding-right: 50px;
+    padding-left: 15px;
+    font-size: 14px;
+  }
+  
+  .nutrition-value {
+    font-size: 14px;
+  }
+  
+  .nutrition-description {
+    font-size: 14px;
+  }
+  
+  hr {
+    margin: 1.5rem 0;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .recipe-container {
+    margin: 0.25rem;
+    padding: 12px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+  
+  .nutrition-name {
+    padding-right: 20px;
+    padding-left: 10px;
   }
 }
